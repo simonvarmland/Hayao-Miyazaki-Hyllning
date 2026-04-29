@@ -161,7 +161,7 @@ a.button,
 
 .hero {
   position: relative;
-  min-height: 560px;
+  min-height: 500px;
   display: flex;
   align-items: flex-start;
   padding: 0;
@@ -595,12 +595,20 @@ a.button,
 
 /* RESPONSIVE */
 
-@media (min-width: 1680px) {
+@media (min-width: 1677px) {
   .hero-plant {
     left: 18rem;
     top: 3rem;
   }
+
+  .hero .hero-button {
+    position: relative;
+    top: -0.7rem;
+    left: 0;
+    margin-top: 0.2rem;
+  }
 }
+
 
 
 @media (max-width: 1080px) {
