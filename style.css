@@ -593,13 +593,17 @@ a.button,
 
   .topbar {
     flex-wrap: wrap;
+    flex-shrink: 0;
   }
 
-  .main-nav {
-    width: 100%;
-    justify-content: center;
-    height: auto;
-  }
+.main-nav {
+  width: auto;
+  flex: 1;
+  justify-content: center;
+  height: auto;
+  gap: 1rem;
+}
+
 
   .info-card h2,
   .info-card p,
