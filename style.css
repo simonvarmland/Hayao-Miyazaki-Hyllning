@@ -337,8 +337,8 @@ a.button,
 }
 .card-decor-left {
   position: absolute;
-  right: 0.4rem;
-  bottom: 0.25rem;
+  right: -0.6rem;
+  bottom: -0.6rem;
   width: 400px;
   opacity: 0.95;
   pointer-events: none;
@@ -596,19 +596,71 @@ a.button,
     flex-shrink: 0;
   }
 
-.main-nav {
-  width: auto;
-  flex: 1;
-  justify-content: center;
-  height: auto;
-  gap: 1rem;
+  .main-nav {
+    width: auto;
+    flex: 1;
+    justify-content: center;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .topbar-button {
+    flex-shrink: 0;
+  }
+
+  /* Mellanläge: håll texten till vänster så illustrationerna får plats */
+  .info-card h2,
+  .info-card p,
+  .top-list {
+    max-width: 76%;
+  }
+
+  .card-decor-left {
+    width: 400px;
+    right: -0.5rem;
+    bottom: -0.2rem;
+    opacity: 0.85;
+  }
+
+  .card-decor-right {
+    width: 165px;
+    right: -0.8rem;
+    bottom: -0.8rem;
+    opacity: 0.85;
+  }
 }
 
+@media (max-width: 960px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0.75rem;
+  }
+
+  .info-card {
+    min-height: 230px;
+  }
 
   .info-card h2,
   .info-card p,
   .top-list {
-    max-width: 100%;
+    max-width: 76%;
+  }
+
+  .card-decor-left {
+    width: 360px;
+    right: -0.8rem;
+    bottom: -0.2rem;
+    opacity: 0.85;
+  }
+
+  .card-decor-right {
+    width: 175px;
+    right: -0.9rem;
+    bottom: -1.1rem;
+    opacity: 0.85;
   }
 }
 @media (max-width: 720px) {
@@ -779,7 +831,7 @@ a.button,
 /* låt illustrationerna synas tydligare */
 .card-decor-left {
   width: 390px;
-  opacity: 0.34;
+  opacity: 0.85;
   right: -0.8rem;
   bottom: -0.6rem;
   z-index: 1;
@@ -787,7 +839,7 @@ a.button,
 
 .card-decor-right {
   width: 170px;
-  opacity: 0.34;
+  opacity: 0.85;
   right: -1.4rem;
   bottom: -1.1rem;
   z-index: 1;
