@@ -31,7 +31,7 @@ Sidan innehåller externa länkar till material om Hayao Miyazaki, hans skapande
 
 ## Live demo
 
-Kommer snart.
+[Se hemsidan här](https://simonvarmland.github.io/Hayao-Miyazaki-Hyllning/)
 
 ## Notis
 
@@ -73,7 +73,7 @@ The page includes external links to material about Hayao Miyazaki, his creative 
 
 ## Live demo
 
-Coming soon.
+[View the website here](https://simonvarmland.github.io/Hayao-Miyazaki-Hyllning/)
 
 ## Note
 

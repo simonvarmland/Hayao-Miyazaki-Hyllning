@@ -558,7 +558,7 @@ a.button,
   width: 1200px;
   max-width: none;
   height: auto;
-  opacity: 0.12;
+  opacity: 0.14;
   pointer-events: none;
   z-index: 1;
 }
