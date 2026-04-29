@@ -22,8 +22,8 @@ img {
 
 .site-shell {
   max-width: 1180px;
-  margin: 0 auto;
-  padding: 0.35rem 0.35rem 1rem;
+  margin: -5px auto;
+  padding: 0rem 0.35rem 1rem;
 }
 /* TYPOGRAPHY */
 
@@ -60,10 +60,12 @@ a.button,
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  width: calc(100% - 0.8rem);
+  margin: 0 auto;
   padding: 0.65rem 1rem;
   background: #f5efe3;
   border: 1px solid #ddd1be;
-  border-radius: 22px 22px 0 0;
+  border-radius: 22px 22px 12px 12px;
   box-shadow: 0 8px 24px rgba(100, 80, 50, 0.04);
 }
 
@@ -190,7 +192,7 @@ a.button,
   position: relative;
   z-index: 1;
   width: min(100%, 560px);
-  padding: 3.1rem 0 0 3.2rem;
+  padding: 2.45rem 0 0 3.2rem;
 }
 
 .hero h1 {
@@ -225,7 +227,7 @@ a.button,
 }
 
 .hero-tagline {
-  margin: 0 0 1.15rem;
+  margin: 0 0 0.95rem;
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   font-size: 1.9rem;
@@ -235,14 +237,14 @@ a.button,
 
 .hero-intro {
   max-width: 30rem;
-  margin: 0 0 0.95rem;
+  margin: 0 0 0.72rem;
   font-size: 1rem;
-  line-height: 1.68;
+  line-height: 1.55;
   color: #314933;
 }
 
 .hero-button {
-  margin-top: 0.75rem;
+  margin-top: 0.35rem;
 }
 .hero-gallery-link {
   display: none;
@@ -386,7 +388,7 @@ a.button,
   text-align: center;
   margin-top: -8px;
   margin-bottom: 18px;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   color: #6f725f;
 }
 
@@ -403,7 +405,7 @@ a.button,
   align-items: center;
   justify-content: center;
   gap: 0.33rem;
-  margin: 0 0 0.1rem;
+  margin: 0 0 0.05rem;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.9rem;
   line-height: 1;
@@ -456,7 +458,14 @@ a.button,
 .gallery-intro p {
   margin: 0;
   color: #61745f;
-  font-size: 0.72rem;
+}
+
+.gallery-intro .section-subtitle {
+  text-align: center;
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+  line-height: 1.15;
+  color: #6f725f;
 }
 
 .gallery-grid {
@@ -649,6 +658,33 @@ a.button,
 }
 
 @media (max-width: 960px) {
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 248, 232, 0.78) 0%,
+      rgba(255, 248, 232, 0.68) 38%,
+      rgba(255, 248, 232, 0.38) 58%,
+      rgba(255, 248, 232, 0.12) 78%,
+      rgba(255, 248, 232, 0) 100%
+    );
+    z-index: 0;
+  }
+
+  .hero-panel {
+    max-width: 470px;
+  }
+
+  .hero-intro {
+    max-width: 27rem;
+  }
+
+   .hero-plant {
+    display: none;
+  }
   .info-grid {
     grid-template-columns: 1fr;
     max-width: 620px;
